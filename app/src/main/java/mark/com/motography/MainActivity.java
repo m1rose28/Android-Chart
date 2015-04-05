@@ -39,11 +39,13 @@ public class MainActivity extends Activity {
         labels.add("May");
         labels.add("June");
 
+        // see https://github.com/PhilJay/MPAndroidChart/wiki/Getting-Started foe details on charting class
+
         BarChart chart = (BarChart) findViewById(R.id.chart);
 
         BarData data = new BarData(labels, dataset);
 
-        chart.setBackgroundColor(Color.parseColor("#000000"));
+        chart.setBackgroundColor(Color.parseColor("#FFFFFF"));
         chart.setData(data);
         chart.setDescription("# of times Alice called Bob");
         chart.animateX(3000);
